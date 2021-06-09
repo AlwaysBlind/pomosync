@@ -25,8 +25,8 @@ jobs:
       run: |
         npm install --global yarn
         yarn install
-        yarn build build --if-present
-        yarn test --if-present
+        yarn build build
+        npm test --if-present
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v2
